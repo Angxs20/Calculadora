@@ -1,0 +1,104 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    height: 10;
+}
+
+
+.Calculadora{
+    margin: 200px auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(206, 23, 23, 0.952);
+    display: grid;
+   gap: 10px; 
+   padding: 5px;
+   border: 1.8px solid rgb(26, 120, 26);
+    z-index: 100;
+    position: absolute;
+    left: 1000px;
+    top: -50px;
+}
+
+.Vacio{
+    height: 100px;
+    width: 99%;
+    background-color: rgb(230, 198, 158);
+    margin: 0%;
+    border: 2px solid rgba(233, 204, 35, 0.359);
+    font-size: large;
+}
+
+.Vicio{
+    height: 45px;
+    width: 99%;
+    background-color: rgb(90, 152, 207);
+    margin: 0%;
+    border:2px solid rgb(206, 206, 233);
+}
+
+
+.James{
+    display: flexbox;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.James > *{
+    height: 100%;
+    width: calc(95%/4);
+    background-color: rgb(219, 149, 36);
+    margin: 0.42px;
+    border: 2px solid rgb(206, 206, 233);
+    border-radius: 10%;
+}
+
+body{
+    background-image: url("Spider-Man_India_1684224960530_1684224972331.avif");
+}
+
+/*body{
+    margin: 0;
+    padding: 1rem;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, min(100%, 100%));
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .halftone {
+    --mask: linear-gradient(rgb(233, 181, 61), rgba(157, 18, 221, 0.5));
+    --stop1: 3%;
+    --stop2: 90%;
+
+    aspect-ratio: 1;
+    position: relative;
+    background: rgb(57, 129, 163);
+    filter: contrast(50);
+  }
+
+  .halftone::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle at center, rgb(6, 123, 21) var(--stop1), transparent var(--stop2));
+  background-size: 1rem 1rem;
+  background-repeat: round;
+  background-position: center;
+  mask-image: var(--mask);
+}
+
+.halftone:nth-child(even)::after {
+  --bgSize: 1.4rem;
+  --bgPosition: calc(var(--bgSize) / 2);
+  --stop1: 3%;
+  --stop2: 65%;
+
+  background-image: radial-gradient(circle at center, rgb(184, 157, 35) var(--stop1), transparent var(--stop2)), radial-gradient(circle at center, rgb(12, 85, 130) var(--stop1), transparent var(--stop2));
+  background-size: var(--bgSize) var(--bgSize);
+  background-position: 0 0, var(--bgPosition) var(--bgPosition);
+}
